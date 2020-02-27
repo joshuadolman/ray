@@ -5,6 +5,7 @@
 #define IMG_WIDTH 80
 #define IMG_HEIGHT 40
 #define BYTESPERPIXEL 4
+//
 
 #include "math.cpp"
 #include "main.h"
@@ -22,7 +23,8 @@ Main(HINSTANCE Instance)
     Image.MemorySize    = Image.Width*Image.Height*Image.BytesPerPixel;
     Image.Memory        = (u32*)VirtualAlloc(NULL, Image.MemorySize, MEM_COMMIT|MEM_RESERVE, PAGE_READWRITE);
     
-    AbsoluteDifference(10.0f, 19.0f);
+    // AbsoluteDifference(10.0f, 19.0f);
+    
     
     world World = {0};
 

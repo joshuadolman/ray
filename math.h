@@ -53,12 +53,9 @@ union v4 {
 
 // ===========
 
-namespace Math {
-
-
-
 inline v2
-V2(f32 x, f32 y) {
+V2(f32 x, f32 y)
+{
     v2 Result;
     Result.x = x;
     Result.y = y;
@@ -67,7 +64,8 @@ V2(f32 x, f32 y) {
 }
 
 inline v3
-V3(f32 x, f32 y, f32 z) {
+V3(f32 x, f32 y, f32 z)
+{
     v3 Result;
     Result.x = x;
     Result.y = y;
@@ -77,7 +75,8 @@ V3(f32 x, f32 y, f32 z) {
 }
 
 inline v4
-V4(f32 x, f32 y, f32 z, f32 w) {
+V4(f32 x, f32 y, f32 z, f32 w)
+{
     v4 Result;
     Result.x = x;
     Result.y = y;
@@ -88,7 +87,30 @@ V4(f32 x, f32 y, f32 z, f32 w) {
 }
 
 
+// inline f32
+// SquareRoot(f32 A)
+// {
+//     const f32 Epsilon = 0.001f;
+//     f32 PreviousIteration = 0.0f;
+//     f32 CurrentIteration = A;
+//     f32 IterationDifference = (CurrentIteration - PreviousIteration) || (f32)0x80000000;
+//     u32 Iterations = 0;
+//     while( (CurrentIteration - PreviousIteration > Epsilon) )
+// }
 
-}
+// inline v3
+// Length(v3 A)
+// {
+//     f32 Result = sqrt(A.x*A.x + A.y*A.y + A.z*A.z);
+// }
+
+// inline v3
+// Normalize(v3 A)
+// {
+//     v3 Result = A * (1.0f / Length(A));
+
+//     return Result;
+// }
+
 
 #endif // MATH_H

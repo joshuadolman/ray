@@ -34,4 +34,4 @@ del *.obj 2> nul
 
 del img.bmp 2> nul
 ray
-img.bmp
+REM img.bmp

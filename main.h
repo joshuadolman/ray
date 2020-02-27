@@ -1,6 +1,13 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include "types.h"
+
+struct camera {
+    v3 Position;
+    v3 Direction;
+};
+
 struct image {
     u32 Width;
     u32 Height;
